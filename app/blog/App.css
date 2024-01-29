@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@400;700&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(112deg, #14445C -33.67%, #122934 68.14%, #000 107.61%);
+  color: #fff;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 16px;
+  min-width: 20px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.App {
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  /*SideBar*/
+  .sidebar {
+    background-color: #000;
+    min-height: 680px;
+    padding: 16px 0px;
+    max-width: 18rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+  }
+  
+  
+  .Spotify_logo {
+    margin-top: -4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+  }
+  
+  .logo-small {
+    height: 50px;
+  }
+  
+  
+  .tooltip{
+    color: #fff;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .ul {
+    text-align: justify;
+    list-style-type: none;
+    position: relative;
+    flex-direction: column;
+    right: 28px;
+    font-weight: 300;
+    color: #B3B3B3;
+  }
+  
+  .homekey {
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .add_image {
+    background-color: #B3B3B3;
+  }
+  
+  .liked_image {
+    background: linear-gradient(to bottom, #0000FF, #B8B8B8 150%);
+  }
+  
+  .playlist_items {
+    margin-top: 30px;
+  }
+  
+  .lower_items {
+    font-weight: 100;
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  
+  
+  /* player */
+  
+  .playlist_menu {
+    background-color: #181818;
+    min-height: 100px;
+    padding: 16px 0px;
+    max-width: 100rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    z-index: 10;
+    /* flex-direction: column; */
+    font-weight: 400;
+  }
+  
+  
+  .ul_down {
+    text-align: justify;
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 70px;
+    font-weight: 300;
+    color: #fff;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  
+  .mendes {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .Mendes_img {
+    bottom: 8px;
+    left: 10px;
+    padding: 1px;
+    max-width: 6rem;
+    display: flex;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .Menu_components {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    bottom: 20px;
+  }
+  
+  .pause {
+    background: #FFF;
+  }
+  
+  
+  .menu_data {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    top: 8px;
+    left: 500px;
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+  }
+  
+  .Menu_component {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    bottom: 20px;
+  }
+  
+  .Menu_data {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    top: 8px;
+    left: 800px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+  }
+  
+.time_begin {
+  position: relative;
+  top: 62px;
+  right: 206px;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.time_end {
+  position: absolute;
+  top: -18px;
+  right: -36px;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+#VectorF:hover {
+  fill: #FFF;
+}
+
+  .volumebar {
+    top: -20px;
+    width: 84px;
+    height: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    background: #FFF;
+  }
+  
+  .playing {
+    width: 170px;
+    height: 0px;
+    border-radius: 10px;
+    background: #FFF;
+    bottom: 3px;
+    right: 3px;
+  }
+  
+  .playing_continues {
+    width: 2100px;
+    position: relative;
+    height: 1px;
+    border-radius: 10px;
+    background: #ebe7e76e;
+    top: 80px;
+    right: 200px;
+  }
+  
+  /* Main Page */
+  .header_container {
+    display: block;
+  }
+  
+  .profile {
+    position: absolute;
+    left: 270px;
+    gap: 4px;
+    display: inline-flex;
+    padding: 4px;
+    margin: 6px;
+    top: 6px;
+  }
+  
+  .change {
+    background: #000;
+    transform: rotate(180deg);
+    padding: 10px;
+  }
+  
+  .change1 {
+    background: #0000005b;
+    transform: rotate(360deg);
+    padding: 10px;
+  }
+  
+  .Profile_jegs {
+    background-color: #010406;
+    position: absolute;
+    height: 24px;
+    right: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    top: 6px;
+  }
+  
+  .Good_morning {
+    position: absolute;
+    display: inline;
+    text-align: justify;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    left: 280px;
+    top: 70px;
+    color: #fff;
+    display: inline-flex;
+  }
+  
+  .Good_morning_sentence {
+    display: inline;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: justify;
+    list-style-type: none;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .Good_morning_sentence:hover {
+    font-size: 32px;
+  }
+  
+  .musicals_pure {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+    gap: 40px;
+    background: #2B3C44;
+    cursor: pointer;
+  }
+
+  
+  .musicals_div {
+    border-radius: 20px;
+    display: inline-flex;
+    gap: 8px;
+    align-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .TopMix {
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    left: 280px;
+    top: 330px;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+  }
+  
+  .see_all {
+    position: absolute;
+    top: 28px;
+    color: #B3B3B3;
+    right: 38px;
+    font-weight: 200;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .TopMix_sentence {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .TopMix_sentence:hover {
+    font-size: 32px;
+  }
+  
+  .musicals_skool {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 2px;
+    gap: 4px;
+    background: #141414;
+    /* min-width: 20px; */
+  }
+
+  .musicals_skool:hover {
+    padding: 11px;
+
+  }
+  
+  .whole_musical {
+    display: flex;
+    right: 0;
+  }
+  .musical_img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .musicals_text {
+    font-size: 12px;
+  }
+  
